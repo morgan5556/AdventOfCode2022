@@ -12,6 +12,7 @@ public class Day1 {
 
 	public static void main(String[] args) {
 		List<String> input = new ArrayList<String>();
+		
 		try {
 			PuzzleReader pr = new PuzzleReader();
 			input = pr.convert_to_array(new FileReader("src/resources/day1.txt"));
@@ -21,7 +22,6 @@ public class Day1 {
 		
 		System.out.println("Part One: " + part_one(input));
 		System.out.println("Part Two: " + part_two(input));
-
 	}
 	
 	private static String part_one(List<String> input) {
@@ -38,7 +38,6 @@ public class Day1 {
 				Integer currentVal = Integer.parseInt(x);
 				currentElf = currentElf + currentVal;
 			}
-			
 		}
 
 		return String.valueOf(currentMax);
